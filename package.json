@@ -1,0 +1,54 @@
+{
+  "author": "<github_username>",
+  "bugs": {
+    "url": "https://github.com/<github_username>/<github_repository>/issues"
+  },
+  "description": "<repository_description>",
+  "homepage": "https://github.com/<github_username>/<github_repository>#readme",
+  "name": "<repository_name>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<github_username>/<github_repository>.git"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist",
+  "scripts": {
+    "build": "webpack",
+    "build-dev": "webpack --env.dev --watch",
+    "build-local": "webpack --env.local",
+    "build-local-watch": "webpack --env.local --watch",
+    "build-npm": "webpack --env.npm",
+    "dev": "npx babel-node ./server",
+    "prepublishOnly": "npm run build-npm",
+    "start": "echo '<start_script>'",
+    "test": "echo '<test_script>'"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "css-loader": "^3.6.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
