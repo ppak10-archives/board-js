@@ -1,5 +1,5 @@
-.circleci
-public
+.github
+dev
 src
 
 # Config Files
@@ -8,8 +8,6 @@ src
 .gitignore
 .lintstagedrc
 .prettierrc
-.stylelintrc
-app.json
 webpack.config.js
 
 # Webpack Build Output
