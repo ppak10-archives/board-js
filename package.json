@@ -16,7 +16,9 @@
   "scripts": {
     "build": "npx babel src --out-dir dist --extensions \".ts\"",
     "dev": "npm run build -- --watch & npx webpack --watch  & npx babel-node ./dev/server",
+    "preversion": "npm test",
     "prepublishOnly": "rm -rf dist && npm run build",
+    "postversion": "git push",
     "start": "echo '<start_script>'",
     "test": "echo '<test_script>'"
   },
