@@ -42,7 +42,7 @@ createServer((request, response) => {
     }
 
     if (statSync(pathname).isDirectory()) {
-      pathname += 'public/index' + ext;
+      pathname += 'dev/static/index' + ext;
     }
 
     readFile(pathname, (err, data) => {
