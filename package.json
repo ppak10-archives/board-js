@@ -1,16 +1,16 @@
 {
-  "author": "<github_username>",
+  "name": "board-js",
+  "description": "",
+  "author": "ppak10",
   "bugs": {
-    "url": "https://github.com/<github_username>/<github_repository>/issues"
+    "url": "https://github.com/ppak10/board-js/issues"
   },
-  "description": "<repository_description>",
-  "homepage": "https://github.com/<github_username>/<github_repository>#readme",
-  "name": "<repository_name>",
+  "homepage": "https://github.com/ppak10/board-js#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<github_username>/<github_repository>.git"
+    "url": "git+https://github.com/ppak10/board-js.git"
   },
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist",
   "scripts": {
@@ -25,16 +25,16 @@
     "test": "echo '<test_script>'"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.3",
-    "@babel/core": "^7.10.3",
-    "@babel/node": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "css-loader": "^3.6.0",
     "dotenv": "^8.2.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
